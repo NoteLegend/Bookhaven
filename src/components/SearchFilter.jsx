@@ -19,6 +19,11 @@ function SearchFilter({ onSearch, onSort }) {
           className="w-full px-4 py-2 rounded-lg border dark:bg-gray-700 dark:border-gray-600"
         />
       </form>
+
+      <button 
+        className='w-full md:w-48 px-4 py-2 rounded-lg border dark:bg-gray-700 dark:border-gray-600'
+        onClick={handleSubmit}
+      >Search</button>
       
       <select
         onChange={(e) => onSort(e.target.value)}
